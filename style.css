@@ -5,6 +5,7 @@
 }
 
 body, html {
+    scroll-behavior: smooth;
     height: 100%;
 }
 body{
@@ -12,8 +13,8 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-  height: 100%;
+    background-size: cover 100vh;
+ 
 }
 nav{
     z-index: 99;
@@ -32,9 +33,11 @@ nav{
     align-items: center;
     height: 15vh;
     transition: .5s;
+   
     
 }
 .menu {
+  
     width: 40%;
 }
 ul {
@@ -47,19 +50,40 @@ li {
     list-style: none;
     color:white;
 }
+.burgercont  {
+    display: none;
+}
 .contenedor {
-   
+  
     position: relative;
     display: flex;
     min-height: 100vh;
-
+    justify-content: flex-start;
+    align-items: flex-start;
    
 }
 nav.black {
-    background:rgba(0, 0, 0, 0.4);
-    height: 13vh;
+    background:rgba(255, 255, 255, 1);
+    border-bottom: rgba(51, 51, 51, 0.3) solid 1px;
+    height: 11vh;
+   
+    
 }
 
+nav.black .logo {
+    color: black;
+}
+
+nav.black  .burgercont p {
+    color: black;
+}
+
+nav.black  .burgercont .burger div {
+    background-color: black;
+}
+.burgercont {
+    display: none;
+}
 .childc{
 
 
@@ -98,7 +122,8 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     
 }
 .myButton {
@@ -116,7 +141,7 @@ h2{
 }
 
 .contenedores {
-
+    
     margin : 20px auto 40px auto;
     width: 90%;
     display: flex;
@@ -125,10 +150,8 @@ h2{
    
 }
 .contenedores div {
-    min-width: 400px;
-    -webkit-box-shadow: 0px 19px 61px -24px rgba(0,0,0,0.18);
--moz-box-shadow: 0px 19px 61px -24px rgba(0,0,0,0.18);
-box-shadow: 0px 19px 61px -24px rgba(0,0,0,0.18);
+    min-width: 300px;
+    border : 1px solid rgb(201, 201, 201);
     border-radius: 9px;
     max-width: 45%;
 height: auto;
@@ -170,14 +193,15 @@ h3 {
     color:#343745;
     font-weight: bolder;
 }
+
 .burger {
     display: none;
 }
 .burger div {
-    width: 25px;
-    height: 3px;
+    width: 15px;
+    height: 2px;
     background-color: #FAFAFA;
-    margin: 5px;
+    margin: 3px;
  
 }
 
@@ -203,7 +227,11 @@ margin-bottom: 3rem;
     }
     
 @media screen and (max-width:900px){
- 
+ nav {
+     position: fixed;
+
+     
+ }
     .menu {
         width: 60%;
     }
@@ -212,15 +240,15 @@ margin-bottom: 3rem;
 @media screen and (max-width:1000px){
     body{
         overflow-x: hidden;
+        background-size: cover;
+        background-position-x: 30%;
     }
     nav {
-        height: 11vh;
-        background-color: rgba(0, 0, 0, 0.4);
+        height: 10vh;
+        justify-content: center;
+     
     }
-    nav.black {
-        background:rgba(0, 0, 0, 0.4);
-        height: 13vh;
-    }
+    
     .nav-links {
         z-index:99;
         position: absolute;
@@ -245,35 +273,69 @@ margin-bottom: 3rem;
         display: block;
 
     }
-  
+  .childc {
+      width: 85%;
+  }
+  .logo {
+ font-size: 12px;
+  }
     .burger{
         cursor: pointer;
+        justify-content: space-around;
+    }
+    .burgercont {
+  
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      
+    }
+    .burgercont p{
+       font-size: 12px;
+       margin-right: 5px;
+    
     }
     .nav-active{
         transform: translateX(0%); 
     }
     .childc{
-align-items: center;
+align-items: flex-start;
 height: 35vh;
 justify-content: space-between;
     }
 }
 
 @media screen and (max-width:500px){
+  
   .childc {
-
+width: 100%;
       height: 40vh;
       justify-content: space-between;
+     
+
+  }
+  .contenedores {
+   
+      padding: 20px;
+  }
+  .childccc {
 
   }
 h1{
-    font-size: 45px;
+    font-size: 35px;
 }
+
+nav {
+    padding: 40px;
+}
+    
+
 h2 {
     font-size:20px;
     line-height: 2rem;
 }
     .childc{
+        width: 90%;
 align-items: center;
     }
 }
