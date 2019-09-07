@@ -330,9 +330,12 @@ width: 100%;
   
       padding: 20px;
   }
-  .childccc {
-
-  }
+  .myButton {
+       
+    padding: 14px 30px;
+    font-size: 13px;
+ 
+}
 h1{
     font-size: 35px;
     text-align: left;
@@ -352,4 +355,21 @@ h2 {
         width: 80%;
 align-items: flex-start;
     }
+}
+
+@media screen and (max-width:390px){
+    
+    .childc{
+    height: 33vh;
+    }
+    h2 {
+        line-height: 1.8
+    }
+    .myButton {
+       
+        padding: 14px 24px;
+        font-size: 13px;
+     
+    }
+    
 }
