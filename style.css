@@ -9,11 +9,12 @@ body, html {
     height: 100%;
 }
 body{
-    background: url("img/evening.png") no-repeat center center ;
+    background: url("img/italy.jpg") no-repeat center center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover 100vh;
+    background-size: cover 768px;
+   
  
 }
 nav{
@@ -32,7 +33,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 15vh;
-    transition: .5s;
+
+    
    
     
 }
@@ -40,15 +42,22 @@ nav{
   
     width: 40%;
 }
-ul {
-   text-decoration: none;
-    display: flex;
-    justify-content: space-around;
-cursor: pointer;
-}
+
 li {
     list-style: none;
     color:white;
+}
+.nav-links {
+    
+}
+.div-links {
+   
+    
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+cursor: pointer;
+
 }
 .burgercont  {
     display: none;
@@ -65,7 +74,7 @@ li {
 nav.black {
     background:rgba(255, 255, 255, 1);
     border-bottom: rgba(51, 51, 51, 0.3) solid 1px;
-    height: 11vh;
+    height: 80px;
    
     
 }
@@ -80,6 +89,11 @@ nav.black  .burgercont p {
 
 nav.black  .burgercont .burger div {
     background-color: black;
+}
+
+nav.white {
+    background-color: white;
+
 }
 .burgercont {
     display: none;
@@ -101,6 +115,7 @@ nav.black  .burgercont .burger div {
 }
 
 h1{
+    
     letter-spacing: 3px;
     font-family: Montserrat;
     font-size: 50px;
@@ -173,7 +188,7 @@ font-weight: 500;
 
 #tit
 {
-    margin: 8rem 0 6rem 0;
+    margin: 12rem 0 6rem 0;
         letter-spacing: 3px;
         font-family: Montserrat;
         font-size: 40px;
@@ -243,13 +258,26 @@ width: 100%;
 }
 
 @media screen and (max-width:1000px){
+    
+#tit
+{
+    margin: 8rem 0 6rem 0;
+        letter-spacing: 3px;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        color: black;
+    
+    
+}
     body{
         overflow-x: hidden;
         background-size: cover;
         background-position-x: 30%;
     }
     nav {
-        height: 10vh;
+        height: 80px;
         justify-content: center;
      
     }
@@ -258,21 +286,56 @@ width: 100%;
         line-height: 1.5;
     }
     .nav-links {
+  
         z-index:99;
         position: absolute;
         right: 0px;
-        height: 92vh;
-        
-        top: 11vh;
-        background-color: rgba(0, 0, 0, 0.9);
+        height: 40vh;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
         align-items: center;
-        width: 70%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        top: 79px;
+        background-color: rgb(253, 253, 253);
+     
+        width: 100%;
+  
+       visibility: hidden;
+       
     }
+.div-links {
+ 
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+   
+    flex-direction: column;
+    
+    
+}
+    .nav-active{
+      
+      display: flex;
+      visibility: visible;
+
+     
+        
+    }
+
+    .div-links li{ 
+        
+        width: 80%;
+      font-size: 13px;
+        margin: auto;
+      padding: 10px 5px;
+        text-align: left;
+       color: #333;
+        border-top: 1px solid rgba(0,0,0,.06);
+    }
+    
+    
+    
+
+
     .nav-links.blacki {
         top: 13vh;
         background-color: rgba(204, 14, 14, 0.9)0.9);
@@ -314,6 +377,17 @@ justify-content: space-between;
     .childc{
         width: 80%;
 align-items: flex-start;
+    }
+}
+
+@media screen and (max-width:768px){
+    body {
+        background: url("img/italy.jpg") no-repeat center center ;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover 100vh;
+     
     }
 }
 
