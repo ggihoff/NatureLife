@@ -33,7 +33,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 15vh;
-
+  
     
    
     
@@ -72,6 +72,7 @@ cursor: pointer;
    
 }
 nav.black {
+   
     background:rgba(255, 255, 255, 1);
     border-bottom: rgba(51, 51, 51, 0.3) solid 1px;
     height: 80px;
@@ -290,7 +291,7 @@ width: 100%;
         z-index:99;
         position: absolute;
         right: 0px;
-        height: 40vh;
+        height: 250px;
         display: flex;
         align-items: center;
         top: 79px;
@@ -302,7 +303,7 @@ width: 100%;
        
     }
 .div-links {
- 
+  
     width: 100%;
     height: 60%;
 
@@ -324,12 +325,12 @@ width: 100%;
     .div-links li{ 
         
         width: 80%;
-      font-size: 13px;
+      font-size: 12px;
         margin: auto;
-      padding: 10px 5px;
+      padding: 15px 5px;
         text-align: left;
        color: #333;
-        border-top: 1px solid rgba(0,0,0,.06);
+        border-top: 1px solid rgba(0,0,0,.07);
     }
     
     

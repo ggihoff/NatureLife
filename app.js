@@ -1,20 +1,27 @@
 
 var activo = false;
+
+var scrolleo = false;
+
 $(window).on('scroll', function(){
-if ($(window).scrollTop()){
+    if ($(window).scrollTop()){
 
-       
-
-
-        $('nav').addClass('black');
+            scrolleo = true;
+              document.getElementById("navi").style.transition = "ease 0.5s"; 
+            $('nav').addClass('black');
 
     }
     else {
-     
-        $('nav').removeClass('black');  
-        
+            scrolleo = false;
 
+            if( scrolleo == false && activo == true) {
+                    
+            }
+            else {
 
+            
+                $('nav').removeClass('black');  
+            }
     }
 })
 
@@ -26,19 +33,30 @@ const navSlide = () => {
 
     burguer.addEventListener('click',() => {
         
+                nav.classList.toggle('nav-active');
+                document.getElementById("navi").style.transition = "ease 0.0s"; 
+                $('nav').addClass('black');
 
-        nav.classList.toggle('nav-active');
-        $('nav').addClass('black');
+                if (activo == false) {
 
-        if (activo == false) {
-        activo = true;
-        }
-       else {
-        $('nav').removeClass('black');
-        activo = false;
-       }
+                        activo = true;
 
-       console.log(activo);
+                }
+                else {
+
+                        activo = false;
+
+                        if(scrolleo == false) {
+
+
+                            $('nav').removeClass('black');  
+                        } 
+
+                    
+
+            }
+
+            console.log(activo);
     });
 }
 
