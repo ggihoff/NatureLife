@@ -403,10 +403,10 @@ align-items: flex-start;
 
 @media screen and (max-width:500px){
   .contenedor {
-    border: 1px solid blue;
+
   }
   .childc {
-border: 1px solid red;
+
 width: 100%;
      height: auto;
       justify-content: space-between;
