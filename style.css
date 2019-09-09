@@ -110,7 +110,7 @@ nav.white {
     justify-content: space-between;
     align-items: flex-start;
     text-align: center;
-  height: 45vh;
+  height: auto;
     position: relative;
     width: 73%;
     top: 0%;
@@ -334,7 +334,7 @@ width: 100%;
     .div-links li{ 
         
         width: 80%;
-      font-size: 12px;
+      font-size: 14px;
         margin: auto;
       padding: 15px 5px;
         text-align: left;
@@ -358,7 +358,7 @@ width: 100%;
       width: 85%;
   }
   .logo {
- font-size: 12px;
+ font-size: 14px;
   }
     .burger{
         cursor: pointer;
@@ -372,7 +372,7 @@ width: 100%;
       
     }
     .burgercont p{
-       font-size: 12px;
+       font-size: 13px;
        margin-right: 5px;
     
     }
@@ -381,7 +381,7 @@ width: 100%;
     }
     .childc{
 align-items: flex-start;
-height: 35vh;
+
 justify-content: space-between;
     }
     .childc{
@@ -402,11 +402,13 @@ align-items: flex-start;
 }
 
 @media screen and (max-width:500px){
-  
+  .contenedor {
+    border: 1px solid blue;
+  }
   .childc {
-
+border: 1px solid red;
 width: 100%;
-      height: 32vh;
+     height: auto;
       justify-content: space-between;
      
 
@@ -423,6 +425,7 @@ h1{
 
 nav {
     padding: 40px;
+  
 }
     
 
@@ -440,7 +443,7 @@ align-items: flex-start;
 @media screen and (max-width:420px){
     
     .childc{
-    height: 33vh;
+    height: auto;
     }
     h2 {
         line-height: 1.8;
