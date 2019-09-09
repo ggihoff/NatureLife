@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
   box-sizing: border-box;
+
 }
 
 body, html {
@@ -24,11 +25,13 @@ nav{
     left: 0%;
     color: white;
     font-size: 15px;
+    
     width: 100%;
-    font-family: Montserrat;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-weight: regular;
+    font-family: Unica one;
+    text-transform: uppercase;
+ 
+    letter-spacing: .1em;
+    font-weight: bold;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -104,10 +107,10 @@ nav.white {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     text-align: center;
-  height: 50vh;
+  height: 45vh;
     position: relative;
     width: 73%;
     top: 0%;
@@ -118,20 +121,24 @@ nav.white {
 h1{
     
     letter-spacing: 3px;
-    font-family: Montserrat;
-    font-size: 50px;
-    font-weight: 600;
+    font-family: Poppins;
+
+    font-size: 40px;
+    font-weight: 900;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 h2{
+    max-width: 600px;
     margin-top: 10px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
+    
     font-family: Montserrat;
-    font-size: 25px;
-    font-weight: 600;
-    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    text-align: left;
     color: white; 
 }
 .botones {
@@ -143,6 +150,7 @@ h2{
     
 }
 .myButton {
+    width: 45%;
     margin-top: 25px;
     text-decoration: none;
     border: 2px solid white;
@@ -151,7 +159,7 @@ h2{
   letter-spacing: 1px;
   font-size: 13px;
     color:white;
-    padding: 14px 28px;
+    padding: 14px 1rem;
     font-size: 16px;
     cursor: pointer;
 }
@@ -280,6 +288,7 @@ width: 100%;
     nav {
         height: 80px;
         justify-content: center;
+       
      
     }
     h2 {
@@ -287,16 +296,16 @@ width: 100%;
         line-height: 1.5;
     }
     .nav-links {
-  
+
         z-index:99;
         position: absolute;
         right: 0px;
         height: 250px;
         display: flex;
         align-items: center;
-        top: 79px;
-        background-color: rgb(253, 253, 253);
-     
+        top: 60px;
+        background-color: rgb(255, 255, 255);
+     border-bottom: 1px solid rgba(0, 0, 0, 0.377);
         width: 100%;
   
        visibility: hidden;
@@ -395,6 +404,7 @@ align-items: flex-start;
 @media screen and (max-width:500px){
   
   .childc {
+
 width: 100%;
       height: 32vh;
       justify-content: space-between;
@@ -405,12 +415,7 @@ width: 100%;
   
       padding: 20px;
   }
-  .myButton {
-       
-    padding: 14px 30px;
-    font-size: 13px;
- 
-}
+
 h1{
     font-size: 35px;
     text-align: left;
@@ -422,7 +427,7 @@ nav {
     
 
 h2 {
-    font-size:20px;
+    font-size:14px;
     line-height: 2rem;
     text-align: left;
 }
@@ -432,17 +437,20 @@ align-items: flex-start;
     }
 }
 
-@media screen and (max-width:390px){
+@media screen and (max-width:420px){
     
     .childc{
     height: 33vh;
     }
     h2 {
-        line-height: 1.8
+        line-height: 1.8;
+    }
+    .botones {
+        justify-content: space-between;
     }
     .myButton {
-       
-        padding: 14px 24px;
+       padding: 1rem 1rem;
+        
         font-size: 13px;
      
     }
