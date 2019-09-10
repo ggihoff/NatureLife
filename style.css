@@ -156,11 +156,11 @@ h2{
    
 }
 .contenedores div {
-    margin-top: 50px;
+  
     min-width: 200px;
     opacity: 0;
-    
-    transition: 1s;
+    transform: translateY(15%);
+    transition: .8s;
    
 height: auto;
 
@@ -180,13 +180,13 @@ font-weight: 500;
 }
 
 .contenedores.show div {
-margin-top: 0px;
+    transform: translateY(0%);
     opacity:1;
 }
 
 #tit
 {
-    margin: 14rem 0 6rem 0;
+    margin: 12rem 0 6rem 0;
         letter-spacing: 3px;
         font-family: Montserrat;
         font-size: 40px;
@@ -194,12 +194,14 @@ margin-top: 0px;
         text-align: center;
         color: black;
      opacity: 0;
+     transform: translateY(40%);
      transition: .8s;
     
 }
 #tit.show {
     opacity: 1;
-    margin: 12rem 0 6rem 0;
+    transform: translateY(0%);
+  
 }
 h3 {
     letter-spacing: 3px;
