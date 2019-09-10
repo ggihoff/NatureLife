@@ -152,11 +152,15 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+ 
    
 }
 .contenedores div {
+    margin-top: 50px;
     min-width: 200px;
+    opacity: 0;
     
+    transition: 1s;
    
 height: auto;
 
@@ -164,6 +168,7 @@ height: auto;
 background-color: white;
 }
 .contenedores p {
+
     text-align: center;
     padding: 30px 60px 60px 60px;
 line-height: 1.8rem;
@@ -174,19 +179,27 @@ font-weight: 500;
     
 }
 
-
+.contenedores.show div {
+margin-top: 0px;
+    opacity:1;
+}
 
 #tit
 {
-    margin: 12rem 0 6rem 0;
+    margin: 14rem 0 6rem 0;
         letter-spacing: 3px;
         font-family: Montserrat;
         font-size: 40px;
         font-weight: 600;
         text-align: center;
         color: black;
+     opacity: 0;
+     transition: .8s;
     
-    
+}
+#tit.show {
+    opacity: 1;
+    margin: 12rem 0 6rem 0;
 }
 h3 {
     letter-spacing: 3px;
@@ -236,6 +249,12 @@ margin-bottom: 3rem;
 width: 100%;
     }
     
+footer {
+    height: 200px;
+    background-color:black;
+    width: 100%;
+}
+
 @media screen and (max-width:900px){
  nav {
      position: fixed;
@@ -433,7 +452,9 @@ nav {
   
 }
     
-
+#tit.show {
+    margin: 5rem 0 6rem 0;
+}
 h2 {
     font-size:14px;
     line-height: 2rem;
@@ -464,9 +485,3 @@ align-items: flex-start;
     }
     
 }
-
-@media screen and (orientation:landscape) {
-    nav {
-        margin-bottom: 100px;
-    }
- }

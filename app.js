@@ -66,7 +66,20 @@ const navSlide = () => {
 
 navSlide();
 
+var controller = new ScrollMagic.Controller();
 
+var scene = new ScrollMagic.Scene({
 
+    triggerElement : '#tit'
 
+})
+.setClassToggle('#tit', 'show')
+.addTo(controller);
 
+var scene = new ScrollMagic.Scene({
+
+    triggerElement : '.contenedores'
+
+})
+.setClassToggle('.contenedores', 'show')
+.addTo(controller);
